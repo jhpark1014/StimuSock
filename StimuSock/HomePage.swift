@@ -39,13 +39,11 @@ struct HomePage: View {
                         // Increase TENS
                     }
                 }
-                .navigationTitle("Stimusock")
+                .navigationTitle("Home")
                 .toolbar {
                     ToolbarItemGroup(placement: .bottomBar){
-                        Button(action: {}, label: {Image("HomeIcon")})
-                        Button("Device Stat")
-                        {
-                            print("Device Stat")
+                        NavigationLink(destination: Device_Stat()) {
+                            Text("Device Stat")
                         }
                     }
                 }
