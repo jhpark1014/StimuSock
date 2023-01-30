@@ -17,10 +17,9 @@ struct ContentView: View {
                 Text("StimuSock")
                 NavigationLink(destination: HomePage()) {
                     Text("Start")
-                    
                 }
+                .padding()
             }
-            .padding()
             .bold()
         }
     }
