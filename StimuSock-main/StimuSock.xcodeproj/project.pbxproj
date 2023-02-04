@@ -14,6 +14,7 @@
 		BA90560B2985CB02000D59E7 /* Device Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90560A2985CB02000D59E7 /* Device Stat.swift */; };
 		BA90560E2985CEED000D59E7 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90560D2985CEED000D59E7 /* Toolbar.swift */; };
 		F8012969298C7A120056A788 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9055FA2985AB8F000D59E7 /* ContentView.swift */; };
+		F876572A298DD543005B10DD /* BluetoothConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8765729298DD543005B10DD /* BluetoothConnection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		BA9056062985C194000D59E7 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePage.swift; path = "/Users/riceloaner/Library/Developer/Xcode/DerivedData/StimuSock-ccewmulzeeskkyatxglqxfgadkid/Build/Products/Debug-iphoneos/../../../../../../../../Desktop/StimuSock-main/StimuSock/HomePage.swift"; sourceTree = "<absolute>"; };
 		BA90560A2985CB02000D59E7 /* Device Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Stat.swift"; sourceTree = "<group>"; };
 		BA90560D2985CEED000D59E7 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
+		F8765729298DD543005B10DD /* BluetoothConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				BA90560A2985CB02000D59E7 /* Device Stat.swift */,
 				BA9055F82985AB8F000D59E7 /* StimuSockApp.swift */,
 				BA9055FA2985AB8F000D59E7 /* ContentView.swift */,
+				F8765729298DD543005B10DD /* BluetoothConnection.swift */,
 				BA9055FC2985AB90000D59E7 /* Assets.xcassets */,
 				BA9055FE2985AB90000D59E7 /* Preview Content */,
 				BA90560D2985CEED000D59E7 /* Toolbar.swift */,
@@ -151,6 +154,7 @@
 				BA90560E2985CEED000D59E7 /* Toolbar.swift in Sources */,
 				BA9056072985C194000D59E7 /* HomePage.swift in Sources */,
 				BA9055F92985AB8F000D59E7 /* StimuSockApp.swift in Sources */,
+				F876572A298DD543005B10DD /* BluetoothConnection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +286,8 @@
 				DEVELOPMENT_TEAM = AQHNKN579U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Please allow Bluetooth usage";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Please allow for Bluetooth discovery";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,6 +320,8 @@
 				DEVELOPMENT_TEAM = AQHNKN579U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Please allow Bluetooth usage";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Please allow for Bluetooth discovery";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
