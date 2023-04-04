@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA8D49B5299C8BB7007E8E54 /* BlePeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8D49B4299C8BB7007E8E54 /* BlePeripheral.swift */; };
 		BA9055F92985AB8F000D59E7 /* StimuSockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9055F82985AB8F000D59E7 /* StimuSockApp.swift */; };
 		BA9055FB2985AB8F000D59E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9055FA2985AB8F000D59E7 /* ContentView.swift */; };
 		BA9055FD2985AB90000D59E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9055FC2985AB90000D59E7 /* Assets.xcassets */; };
@@ -14,9 +15,12 @@
 		BA9056072985C194000D59E7 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9056062985C194000D59E7 /* HomePage.swift */; };
 		BA90560B2985CB02000D59E7 /* Device Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90560A2985CB02000D59E7 /* Device Stat.swift */; };
 		BA90560E2985CEED000D59E7 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90560D2985CEED000D59E7 /* Toolbar.swift */; };
+		BAFC0AD9298F173E00ABAB3F /* BLEController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC0AD8298F173E00ABAB3F /* BLEController.swift */; };
+		BAFC0ADB298F193600ABAB3F /* RTSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC0ADA298F193600ABAB3F /* RTSensors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA8D49B4299C8BB7007E8E54 /* BlePeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlePeripheral.swift; sourceTree = "<group>"; };
 		BA9055F52985AB8F000D59E7 /* StimuSock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StimuSock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9055F82985AB8F000D59E7 /* StimuSockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StimuSockApp.swift; sourceTree = "<group>"; };
 		BA9055FA2985AB8F000D59E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,6 +29,9 @@
 		BA9056062985C194000D59E7 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		BA90560A2985CB02000D59E7 /* Device Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Stat.swift"; sourceTree = "<group>"; };
 		BA90560D2985CEED000D59E7 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
+		BAFC0AD8298F173E00ABAB3F /* BLEController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEController.swift; sourceTree = "<group>"; };
+		BAFC0ADA298F193600ABAB3F /* RTSensors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTSensors.swift; sourceTree = "<group>"; };
+		BAFC0ADC298F23CA00ABAB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +48,9 @@
 		BA9055EC2985AB8F000D59E7 = {
 			isa = PBXGroup;
 			children = (
+				BAFC0ADA298F193600ABAB3F /* RTSensors.swift */,
+				BAFC0AD8298F173E00ABAB3F /* BLEController.swift */,
+				BA8D49B4299C8BB7007E8E54 /* BlePeripheral.swift */,
 				BA9055F72985AB8F000D59E7 /* StimuSock */,
 				BA9055F62985AB8F000D59E7 /* Products */,
 			);
@@ -57,6 +67,7 @@
 		BA9055F72985AB8F000D59E7 /* StimuSock */ = {
 			isa = PBXGroup;
 			children = (
+				BAFC0ADC298F23CA00ABAB3F /* Info.plist */,
 				BA9056062985C194000D59E7 /* HomePage.swift */,
 				BA90560A2985CB02000D59E7 /* Device Stat.swift */,
 				BA9055F82985AB8F000D59E7 /* StimuSockApp.swift */,
@@ -148,8 +159,11 @@
 			files = (
 				BA9055FB2985AB8F000D59E7 /* ContentView.swift in Sources */,
 				BA90560B2985CB02000D59E7 /* Device Stat.swift in Sources */,
+				BAFC0ADB298F193600ABAB3F /* RTSensors.swift in Sources */,
 				BA90560E2985CEED000D59E7 /* Toolbar.swift in Sources */,
 				BA9056072985C194000D59E7 /* HomePage.swift in Sources */,
+				BA8D49B5299C8BB7007E8E54 /* BlePeripheral.swift in Sources */,
+				BAFC0AD9298F173E00ABAB3F /* BLEController.swift in Sources */,
 				BA9055F92985AB8F000D59E7 /* StimuSockApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +296,9 @@
 				DEVELOPMENT_TEAM = AQHNKN579U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = StimuSock/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow Bluetooth";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow Bluetooth";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -311,7 +327,9 @@
 				DEVELOPMENT_TEAM = AQHNKN579U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = StimuSock/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow Bluetooth";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow Bluetooth";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
