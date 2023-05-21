@@ -7,28 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA6BA1C829E0830A00EF04B9 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6BA1C729E0830A00EF04B9 /* PopUpView.swift */; };
 		BA8D49B5299C8BB7007E8E54 /* BlePeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8D49B4299C8BB7007E8E54 /* BlePeripheral.swift */; };
 		BA9055F92985AB8F000D59E7 /* StimuSockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9055F82985AB8F000D59E7 /* StimuSockApp.swift */; };
 		BA9055FB2985AB8F000D59E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9055FA2985AB8F000D59E7 /* ContentView.swift */; };
-		BA9055FD2985AB90000D59E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9055FC2985AB90000D59E7 /* Assets.xcassets */; };
 		BA9056002985AB90000D59E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9055FF2985AB90000D59E7 /* Preview Assets.xcassets */; };
 		BA9056072985C194000D59E7 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9056062985C194000D59E7 /* HomePage.swift */; };
 		BA90560B2985CB02000D59E7 /* Device Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90560A2985CB02000D59E7 /* Device Stat.swift */; };
 		BA90560E2985CEED000D59E7 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90560D2985CEED000D59E7 /* Toolbar.swift */; };
+		BAA5B47E29F0EA1A0096099C /* UsageData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAA5B47C29F0EA1A0096099C /* UsageData.xcdatamodeld */; };
+		BAA5B48029F0ECFB0096099C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA5B47F29F0ECFB0096099C /* DataController.swift */; };
+		BAF5622C29DBEF3C00901BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9055FC2985AB90000D59E7 /* Assets.xcassets */; };
 		BAFC0AD9298F173E00ABAB3F /* BLEController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC0AD8298F173E00ABAB3F /* BLEController.swift */; };
 		BAFC0ADB298F193600ABAB3F /* RTSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC0ADA298F193600ABAB3F /* RTSensors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA6BA1C729E0830A00EF04B9 /* PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
 		BA8D49B4299C8BB7007E8E54 /* BlePeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlePeripheral.swift; sourceTree = "<group>"; };
 		BA9055F52985AB8F000D59E7 /* StimuSock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StimuSock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9055F82985AB8F000D59E7 /* StimuSockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StimuSockApp.swift; sourceTree = "<group>"; };
 		BA9055FA2985AB8F000D59E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BA9055FC2985AB90000D59E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA9055FC2985AB90000D59E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = StimuSock/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		BA9055FF2985AB90000D59E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BA9056062985C194000D59E7 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		BA90560A2985CB02000D59E7 /* Device Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Stat.swift"; sourceTree = "<group>"; };
 		BA90560D2985CEED000D59E7 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
+		BAA5B47D29F0EA1A0096099C /* UsageData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UsageData.xcdatamodel; sourceTree = "<group>"; };
+		BAA5B47F29F0ECFB0096099C /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		BAFC0AD8298F173E00ABAB3F /* BLEController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEController.swift; sourceTree = "<group>"; };
 		BAFC0ADA298F193600ABAB3F /* RTSensors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTSensors.swift; sourceTree = "<group>"; };
 		BAFC0ADC298F23CA00ABAB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +54,8 @@
 		BA9055EC2985AB8F000D59E7 = {
 			isa = PBXGroup;
 			children = (
+				BAA5B47C29F0EA1A0096099C /* UsageData.xcdatamodeld */,
+				BAA5B47F29F0ECFB0096099C /* DataController.swift */,
 				BAFC0ADA298F193600ABAB3F /* RTSensors.swift */,
 				BAFC0AD8298F173E00ABAB3F /* BLEController.swift */,
 				BA8D49B4299C8BB7007E8E54 /* BlePeripheral.swift */,
@@ -75,6 +83,7 @@
 				BA9055FC2985AB90000D59E7 /* Assets.xcassets */,
 				BA9055FE2985AB90000D59E7 /* Preview Content */,
 				BA90560D2985CEED000D59E7 /* Toolbar.swift */,
+				BA6BA1C729E0830A00EF04B9 /* PopUpView.swift */,
 			);
 			path = StimuSock;
 			sourceTree = "<group>";
@@ -145,8 +154,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF5622C29DBEF3C00901BFC /* Assets.xcassets in Resources */,
 				BA9056002985AB90000D59E7 /* Preview Assets.xcassets in Resources */,
-				BA9055FD2985AB90000D59E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +169,10 @@
 				BA9055FB2985AB8F000D59E7 /* ContentView.swift in Sources */,
 				BA90560B2985CB02000D59E7 /* Device Stat.swift in Sources */,
 				BAFC0ADB298F193600ABAB3F /* RTSensors.swift in Sources */,
+				BA6BA1C829E0830A00EF04B9 /* PopUpView.swift in Sources */,
 				BA90560E2985CEED000D59E7 /* Toolbar.swift in Sources */,
+				BAA5B48029F0ECFB0096099C /* DataController.swift in Sources */,
+				BAA5B47E29F0EA1A0096099C /* UsageData.xcdatamodeld in Sources */,
 				BA9056072985C194000D59E7 /* HomePage.swift in Sources */,
 				BA8D49B5299C8BB7007E8E54 /* BlePeripheral.swift in Sources */,
 				BAFC0AD9298F173E00ABAB3F /* BLEController.swift in Sources */,
@@ -369,6 +381,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BAA5B47C29F0EA1A0096099C /* UsageData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BAA5B47D29F0EA1A0096099C /* UsageData.xcdatamodel */,
+			);
+			currentVersion = BAA5B47D29F0EA1A0096099C /* UsageData.xcdatamodel */;
+			path = UsageData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BA9055ED2985AB8F000D59E7 /* Project object */;
 }

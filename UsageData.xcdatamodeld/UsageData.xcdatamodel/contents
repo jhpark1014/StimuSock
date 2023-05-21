@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22E252" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Haptics_Level" representedClassName="Haptics_Level" syncable="YES" codeGenerationType="class">
+        <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Haptics_Start" representedClassName="Haptics_Start" syncable="YES" codeGenerationType="class">
+        <attribute name="start" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="TENS_Level" representedClassName="TENS_Level" syncable="YES" codeGenerationType="class">
+        <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="TENS_Start" representedClassName="TENS_Start" syncable="YES" codeGenerationType="class">
+        <attribute name="start" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+</model>

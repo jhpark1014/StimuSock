@@ -10,7 +10,9 @@ import CoreBluetooth
 
 struct ContentView: View {
     @StateObject var bleController = BLEController()
-    @State private var showAlert = false
+    @State var isConnected = false
+    @State var showConnectionAlert = false
+    @State var showResetAlert = false
     public var writtenText: String = ""
 //    @ObservedObject var batteryPercent: UInt16!
     
@@ -45,48 +47,58 @@ struct ContentView: View {
                     Spacer()
                         .frame(width: 100, height: 80)
                     
-                    Button("Connect") {
-                        bleController.connectToSensor(type: .adafruit)
-                        print("did it succeed", bleController.connectionSuccess)
+                    HStack {
+                        Spacer()
+                            .frame(width:27)
+                        
+                        Button("Connect") {
+                            bleController.connectToSensor(type: .adafruit)
+                            print("did it succeed", bleController.connectionSuccess)
+                            isConnected = bleController.connectionSuccess
+                            showConnectionAlert = true
+                            print(isConnected)
+                        }
+                        .font(.system(size:19))
+                        .padding()
+                        .background(CustomColor.MainColor)
+                        .foregroundColor(.white)
+                        .clipShape(Capsule())
+                        .padding()
+                        .frame(alignment: .center)
+                        .alert(isPresented: $showConnectionAlert) {
+                            if isConnected {
+                                return  Alert(title: Text("Successfully connected to StimuSock"), message: Text(""), dismissButton: .default(Text("OK")))
+                            } else {
+                                return  Alert(title: Text("Connection failed. Please try again."), message: Text(""), dismissButton: .default(Text("OK")))
+                            }
+                        }
+                        
+                        
+                        if isConnected {
+                            Circle()
+                                .fill(.green)
+                                .frame(width: 20, height: 20, alignment: .trailing)
+                        } else {
+                            Circle()
+                                .fill(.red)
+                                .frame(width: 20, height: 20, alignment: .trailing)
+                        }
+                        
+                            
                     }
-                    .font(.system(size:19))
-                    .padding()
-                    .background(CustomColor.MainColor)
-                    .foregroundColor(.white)
-                    .clipShape(Capsule())
-                    .padding()
-                    //                .buttonStyle(.borderedProminent)
                     
                     //                Text("Battery Int: \(bleController.batteryLifeInt)")
                     //                Text("Character: \(bleController.batteryLife)")
                     //                Text("Device Name: \(bleController.deviceName)")
-                    
-                    //                Button("Start TENS") {
-                    //                    print("Signaling")
-                    //                    let valueString = Data([1])
-                    //                    if let blePeripheral = bleController.myPeripheral {
-                    //                      if let tensEnableCharacteristic = bleController.tensEnableCharacteristic {
-                    //                          blePeripheral.writeValue(valueString, for: tensEnableCharacteristic, type: CBCharacteristicWriteType.withResponse)
-                    //                      }
-                    //                    }
-                    //                }
-                    //
-                    //                Button("Stop TENS") {
-                    //                    print("Signaling")
-                    //                    let valueString = Data([0])
-                    //                    if let blePeripheral = bleController.myPeripheral {
-                    //                      if let tensEnableCharacteristic = bleController.tensEnableCharacteristic {
-                    //                          blePeripheral.writeValue(valueString, for: tensEnableCharacteristic, type: CBCharacteristicWriteType.withResponse)
-                    //                      }
-                    //                    }
-                    //                }
-                    //                .padding()
                     
                     Button("Reset connection") {
                         print("RESET")
                         bleController.disconnectFromDevice()
                         bleController.batteryLifeInt = 0
                         bleController.deviceName = ""
+                        showResetAlert = true
+                        isConnected = false
+                        print(">??", isConnected)
                     }
                     .padding()
                     .font(.system(size:19))
@@ -94,20 +106,21 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .clipShape(Capsule())
                     .padding()
-                    
+                    .alert(isPresented: $showResetAlert) {
+                        Alert(title: Text("Successfully disconnected from StimuSock"), message: Text(""), dismissButton: .default(Text("OK")))
+                    }
                 }
                 .bold()
             }
-//            .environmentObject(bleController)
         }
         .environmentObject(bleController)
     }
-//    .environmentObject(bleController)
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        
     }
 }
 
